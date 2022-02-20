@@ -188,7 +188,7 @@
         <div class="main-container">
             <h3 style="text-align: center;">Get in Touch</h3>
 
-            <form id="contact-form">
+            <form id="contact-form" action="https://formspree.io/f/mrgjqokp" method="post">
                 <a name="contact"></a>
                 
                 <label>Name</label>
@@ -211,6 +211,30 @@
     </section>
 
     <script type="text/javascript" src="script.js"></script>
+	
+	<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+            function sendEmail(){
+        Email.send({
+        // SecureToken: "0f23d332-0cff-44e8-9997-0e8d6dc650e7",
+
+        Host: "smtp.yourisp.com",
+        Username : "arjunpandey981@gmail.com",
+        
+        To:'arjunpandey981@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Contact Me Form!!",
+        Body : "Name" + document.getElementById("name").value+
+                    "<br> Subject: " + document.getElementById("subject").value +
+                    "<br> Email: " + document.getElementById("email").value +
+                    "<br> message: " + document.getElementById("message").value 
+    }) .then(
+    message => alert("Thank you For Contacting Me!!")
+    );
+    }
+
+
+    </script> -->
 
 </body>
 </html>
